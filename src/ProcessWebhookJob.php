@@ -11,7 +11,7 @@ use Spatie\WebhookClient\Models\WebhookCall;
 
 abstract class ProcessWebhookJob implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, InteractsWithQueue, Queueable;
 
     public WebhookCall $webhookCall;
 
